@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    
+    <link rel="shortcut icon" href="../../img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>Plugins - PizzaTime's Bean</title>
+    <link href="../../css/bootstrap-3.3.7.min.css" rel="stylesheet">
+    <link href="../../css/font-awesome-4.7.0.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/highlight.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery-3.2.1.min.js"></script>
+    <script src="../../js/bootstrap-3.3.7.min.js"></script>
+    <script src="../../js/highlight.pack.js"></script>
+    
+    <base target="_top">
+    <script>
+      var base_url = '../..';
+      var is_top_frame = false;
+        
+        var pageToc = [
+          {title: "3ds plugins guide", url: "#_top", children: [
+              {title: "Requirements", url: "#requirements" },
+              {title: "Installing plugin type .plg", url: "#installing-plugin-type-plg" },
+              {title: "Installing plugin type .3gx", url: "#installing-plugin-type-3gx" },
+              {title: "(Optional) How to switch between 3gx and plg loader luma easily", url: "#optional-how-to-switch-between-3gx-and-plg-loader-luma-easily" },
+              {title: "Troubleshooting", url: "#troubleshooting" },
+          ]},
+        ];
+
+    </script>
+    <script src="../../js/base.js"></script>
+      <script src="../../search/main.js"></script> 
+</head>
+
+<body>
+<script>
+if (is_top_frame) { $('body').addClass('wm-top-page'); }
+</script>
+
+
+
+<div class="container-fluid wm-page-content">
+  <a name="_top"></a>
+    
+
+    
+    
+      
+    
+
+    
+
+    <h1 id="3ds-plugins-guide">3ds plugins guide</h1>
+<p>This guide will show you how to install plugins without Boot NTR Selector</p>
+<p>Credit to <code>It'sPizzaTime#4530</code> on discord for the images and the rest of this terrible guide</p>
+<p>If you're trying to use the ACNL plugin you need to follow the steps in the <a href="https://discord.gg/EZSxqRr">ACNL Hacking Discord</a></p>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li>A console with boot9strap installed</li>
+<li>A plugin file you want to use (<code>.3gx or .plg</code>), if you don't have any you can find one them <a href="https://google.com">Google</a> or <a href="https://github.com/ItsDeidara/MegaNTR/tree/master/Plugins/plugin">Mega NTR on github</a></li>
+</ul>
+<h3 id="installing-plugin-type-plg">Installing plugin type <code>.plg</code></h3>
+<ol>
+<li>Download the <code>boot.firm</code> from <a href="http://badda.de/lumamod/Luma3DS_v9.1-7-gbd15f_mod.7z">here</a> and place it on your sd root, make sure you overwrite the current one.</li>
+<li>Rename your <code>.plg</code> file to <code>plugin.plg</code></li>
+<li>Make a folder called <code>plugins</code> if it doesn't already exist in the <code>luma</code> folder on your sd</li>
+<li>Inside of the <code>plugins</code> folder make a folder named the titleid of the game you want to use the plugin file for (If you don't know the game titleid you can find a list <a href="http://3dsdb.com">here</a> or <a href="https://hax0kartik.github.io/3dsdb/">here</a>)</li>
+<li>
+<p>Place the <code>plugin.plg</code> file in the folder you just created, if you are having trouble understanding here's an example that might help:
+<img alt="plg location" src="/files/pic/plg_location.png" />
+(in this example <code>00040000001B5100</code> is Pokemon Ultra Moon's titleid)</p>
+</li>
+<li>
+<p>Insert your sd card into your 3ds and boot it up, if you get a luma config screen select <code>Show NAND or user string in System Settings</code> and press start</p>
+</li>
+<li>Once you're in the home menu, open the rosalina menu (L + Dpad Down + Select by default) and select <code>Enable Plugin Loader</code></li>
+<li>Press B to exit the rosalina menu<br/><strong>(note: if the plugin loader is enabled the option will say <code>Disable Plugin Loader</code> and if the plugin loader is disabled the option will say <code>Enable Plugin Loader</code>)</strong><br/></li>
+<li>When you launch the game you setup a plugin for your screen should flash green during the Nintendo 3ds splash</li>
+<li>The standard for cheat menus is the select button, if pressing select doesn't work consider reading the readme of the plugin you're using</li>
+</ol>
+<h3 id="installing-plugin-type-3gx">Installing plugin type <code>.3gx</code></h3>
+<ol>
+<li>Download the <code>boot.firm</code> from <a href="https://github.com/mariohackandglitch/Luma3DS/releases/latest/">here</a> and place it on your sd root, make sure you overwrite the current one.</li>
+<li>Make a folder called <code>plugins</code> if it doesn't already exist in the <code>luma</code> folder on your sd</li>
+<li>Inside of the <code>plugins</code> folder make a folder named the titleid of the game you want to use the plugin file for (If you don't know the game titleid you can find a list <a href="http://3dsdb.com">here</a> or <a href="https://hax0kartik.github.io/3dsdb/">here</a>)</li>
+<li>Place your <code>.3gx</code> file in the folder you just created, here is an example that could be helpful:
+<img alt="3gx location" src="/files/pic/3gx_location.png" /> (in this example <code>0004000000030800</code> is Mario Kart 7 Rev 01 USA's titleid)</li>
+<li>Insert your sd into your 3ds and boot it up, if you get a luma config screen select <code>Show NAND or user string in System Settings</code> and press start</li>
+<li>Once you're in the home menu, open the rosalina menu (L + Dpad Down + Select by default) and enable the plugin loader</li>
+<li>Press B to exit rosalina</li>
+<li>Open the game you installed a plugin for, your screen should flash green or blue during the Nintendo 3ds splash</li>
+<li>The standard for cheat menus is the select button, if pressing select doesn't work consider reading the readme of the plugin you're using</li>
+</ol>
+<h3 id="optional-how-to-switch-between-3gx-and-plg-loader-luma-easily">(Optional) How to switch between <code>3gx</code> and <code>plg</code> loader luma easily</h3>
+<ol>
+<li>Download both <code>boot.firm</code>'s (<a href="https://github.com/mariohackandglitch/Luma3DS/releases/latest/">Luma 3gx Loader</a> | <a href="http://badda.de/lumamod/Luma3DS_v9.1-7-gbd15f_mod.7z">Luma plg loader</a>)</li>
+<li>Rename both <code>boot.firm</code>'s to something else like <code>Luma3ds_3gx_loader.firm</code> for the <code>3gx</code> loader and <code>Luma3ds_plg_loader.firm</code> for the <code>plg</code> loader</li>
+<li>Download and install <a href="https://github.com/SaturnSH2x2/PayloadSpinner3DS/releases/latest">PayloadSpinner3ds</a> on your 3ds. Here is a QR you can scan with FBI (FBI -&gt; Remote Install -&gt; Scan QR Code) <br/>
+<img alt="PayloadSpinner3ds QR" src="/files/pic/payload_spinner_3ds_qr.png" /></li>
+<li>Once it's done installing, exit to your home menu and open the app once. It should say <code>No payloads were found. Refer to README</code>, just press A to exit</li>
+<li>Place both firm files in <code>/3ds/data/PayloadSpinner3DS/payloads</code> on your sd like this:
+<img alt="PayloadSpinner3ds payload location" src="/files/pic/payload_spinner_3ds_payload_location.png" />
+Now when you want to switch between luma plg loader and luma 3gx loader you can open PayloadSpinner3DS and select whichever one you want</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h4 id="game-crashes-when-using-a-plugin">Game crashes when using a plugin</h4>
+<p>Don't use that plugin</p>
+<h4 id="screen-doesnt-flash-and-plugin-doesnt-load">Screen doesn't flash and plugin doesn't load</h4>
+<p>Check if you got the right titleid, if you're sure you did try a different plugin</p>
+
+  <br>
+    
+
+    
+    
+      
+    
+
+    <br>
+</div>
+
+
+</body>
+</html>
