@@ -1,0 +1,23 @@
+if	chk $[ONTYPE] "N3ds"
+	if	not find 1:/title/00040138/20000102/content/????????.app TWL_NCCH
+		echo "TWLFIRM NCCH Not Found\n Aborting..."
+		goto Exit
+	end
+else
+	if	not find 1:/title/00040138/00000102/content/????????.app TWL_NCCH
+		echo "TWLFIRM NCCH Not Found\n Aborting..."
+		goto Exit
+	end
+end
+if	not imgmount $[TWL_NCCH]
+	echo "Failed to mount\n $[TWL_NCCH]\n aborting..."
+	goto exit
+end
+if	not cp -w G:/exefs.bin $[GM9OUT]/section0.bin
+	echo "Copying exefs failed, aborting..."
+	goto Exit
+else
+	echo "section0.bin successfully dumped to \n$[GM9OUT]"
+end
+@Exit
+	
