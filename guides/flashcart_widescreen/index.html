@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Installing Themes - PizzaTime's Bean Collection</title>
+        <title>Flashcart Widescreen - PizzaTime's Bean Collection</title>
         <link href="../../css/bootstrap.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -41,7 +41,7 @@
                                 <ul class="dropdown-menu">
                                     
 <li>
-    <a href="./" class="dropdown-item active">Installing Themes</a>
+    <a href="../themes/" class="dropdown-item">Installing Themes</a>
 </li>
                                     
 <li>
@@ -49,7 +49,7 @@
 </li>
                                     
 <li>
-    <a href="../flashcart_widescreen/" class="dropdown-item">Flashcart Widescreen</a>
+    <a href="./" class="dropdown-item active">Flashcart Widescreen</a>
 </li>
                                 </ul>
                             </li>
@@ -65,12 +65,12 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../.." class="nav-link">
+                                <a rel="prev" href="../plugins/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../plugins/" class="nav-link">
+                                <a rel="next" href="../../downloads/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -92,8 +92,12 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-level="1"><a href="#custom-themes-guide" class="nav-link">Custom themes guide</a>
+            <li class="nav-item" data-level="1"><a href="#flashcart-widescreen-guide" class="nav-link">Flashcart Widescreen Guide</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#what-you-need" class="nav-link">What you need</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -101,67 +105,63 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="custom-themes-guide">Custom themes guide</h1>
-<p>Credit to <code>It'sPizzaTime#4530</code> on discord for the images and the rest of this terrible guide</p>
-<h3 id="what-you-need">What you need</h3>
+<h1 id="flashcart-widescreen-guide">Flashcart Widescreen Guide</h1>
+<p>This guide will teach you how to setup widescreen with any nds flashcart running the WoodR4 kernel</p>
+<p>Credits to <code>It'sPizzaTime#4530</code> on discord for this guide</p>
+<h2 id="what-you-need">What you need</h2>
 <ul>
-<li>A console with Luma3ds installed</li>
-<li>Anemone3ds (note: you should already have anemone if you followed a good guide, if you somehow don't you can get it <a href="https://github.com/astronautlevel2/Anemone3DS/releases/latest">here</a>)</li>
+<li>A 3ds with Luma3ds installed and GodMode9 setup</li>
+<li>A DS Flashcart running WoodR4</li>
 </ul>
-<h3 id="finding-a-theme">Finding a theme</h3>
+<h3 id="method-1-patching-twlbgcxi-manually">Method 1: Patching <code>TwlBg.cxi</code> manually</h3>
 <ol>
-<li>Open <a href="https://themeplaza.eu">Themeplaza</a> on your computer</li>
-<li>Find a theme you like</li>
-<li>Press on it</li>
-<li>Use one of the following 2 methods to install the theme</li>
+<li>Download <a href="/files/flashcart_widescreen/section0_dumper.gm9">this</a> and put it in <code>/gm9/scripts</code> on your 3ds's SD</li>
+<li>Insert your SD into your 3ds and power it on while holding start</li>
+<li>In the GodMode9 main menu press the home button and navigate to <code>Scripts</code> &gt; <code>section0_dumper</code> and run it</li>
+<li>When it's done running power off your 3ds and insert your sd into your pc</li>
+<li>Navigate to <code>/gm9/out</code> and copy the file <code>section0.bin</code> located there to somewhere on your pc</li>
+<li>Download <code>mkpatch_b</code> from <a href="https://puu.sh/E43fN/f7f3eb2f61.zip">here</a> and put it in the same folder as <code>section0.bin</code></li>
+<li>Download <a href="/files/flashcart_widescreen/wide.bat">this</a> and place it in the same folder as the two other files</li>
+<li>Double Click the <code>wide.bat</code> script and let it run</li>
+<li>It should have generated a file called <code>TwlBg.cxi</code></li>
+<li>Make a <code>sysmodules</code> folder in the <code>luma</code> folder on your sd</li>
+<li>Copy the <code>TwlBg.cxi</code> file to the <code>sysmodules</code> folder</li>
 </ol>
-<h3 id="method-1-adding-themes-via-qr-code">Method 1: Adding Themes via QR code</h3>
+<h3 id="method-2-using-sonos-twpatch-to-patch-twlbgcxi">Method 2: Using Sono's TWPatch to patch <code>TwlBg.cxi</code></h3>
 <ol>
-<li>Hover over the theme's picture with your mouse, a QR code should pop up like this:<br />
-<img alt="Theme QR" src="/files/pic/theme_qr.png" /></li>
-<li>In Anemone, press the right bumper to open the camera</li>
-<li>Scan the QR code</li>
-<li>The theme should be added to the list</li>
+<li>Download and install <a href="https://sono.9net.org/hebrew/TWPatch/data/TWPatch.cia/">TWPatch</a> on your 3ds</li>
+<li>Launch TWPatch from the home menu, it looks like this:<br />
+<img alt="TWPatch Home Menu" src="/files/pic/TWPatch_Home.png" /></li>
+<li>Leave your cursor on <code>Nintendo Default</code> and press Start + X</li>
+<li>Wait for it to finish compressing</li>
+<li>Press Select to exit</li>
+<li>Power off your console</li>
 </ol>
-<h3 id="method-2-adding-themes-manually">Method 2: Adding Themes Manually</h3>
+<h3 id="enabling-and-disabling-widescreen">Enabling and Disabling widescreen</h3>
+<p>To enable/disable widescreen you need to enable/disable <code>loading external FIRMs and modules</code>
+To do that, boot into luma config (select on boot) and select <code>Enable loading external FIRMs and modules</code>, if it is enabled that means widescreen is enabled and if it's disabled that means widescreen is disabled.</p>
+<h3 id="optional-advanced-1610-widescreen-cheats">(Optional) [Advanced] 16:10 Widescreen cheats</h3>
 <ol>
-<li>Press the download button on the theme's page, if you can't locate it here's a picture that should help:<br />
-<img alt="Theme Manual Download" src="/files/pic/theme_manual_download.png" /></li>
-<li>Save the zip somewhere on your pc</li>
-<li>Insert your 3ds's sd card into your pc</li>
-<li>Make a <strong>Themes</strong> folder on your sd root if it doesn't already exist</li>
-<li>Copy the downloaded zip file to the themes folder, if you're having difficulty here's an example:
-<img alt="Theme Location" src="/files/pic/theme_location.png" /></li>
-</ol>
-<h3 id="installing-the-obtained-themes">Installing the obtained themes</h3>
-<ol>
-<li>Open Anemone on your 3ds if it isn't already open</li>
-<li>Select the theme out of the list:<br />
-<img alt="Theme List" src="/files/pic/theme_list.png" /></li>
-<li>Hold A + Dpad up and then release A to install the theme</li>
-<li>Press Start to exit Anemone and return to your home menu</li>
-<li>Congratulations, you now have a custom theme  </li>
-</ol>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img alt="Custom Theme" src="/files/pic/custom_theme.png" /></p>
-<h3 id="troubleshooting">Troubleshooting</h3>
-<h4 id="anemone-says-theme-extdata-does-not-exist">Anemone says "Theme extdata does not exist!"</h4>
-<p>Fix: Set a default theme in the home menu settings</p>
-<h4 id="i-get-a-crash-after-installing-a-theme">I get a crash after installing a theme</h4>
-<p>Fix: Deleting the home menu theme data</p>
-<h5 id="how-to-delete-home-menu-theme-data">How to delete Home Menu Theme Data</h5>
-<ol>
-<li>
-<p>Navigate to the following folder on your SD card:  <code>/Nintendo 3DS/(32 Character ID)/(32 Character ID)/extdata/00000000/</code> </p>
-</li>
-<li>
-<p>Delete the corresponding folder for your region:<br />
-USA: <code>000002cd</code><br />
-EUR: <code>000002ce</code><br />
-JPN: <code>000002cc</code>  </p>
-</li>
-</ol>
-<h4 id="anemone-crashes">Anemone Crashes</h4>
-<p>Fix: Try again, if it still crashes reinstall Anemone, if it <strong>still</strong> crashes delete the <code>Themes</code> folder on your sd</p></div>
+<li>Download r4cce from <a href="http://hp.vector.co.jp/authors/VA013928/bin/r4cce086.zip">here</a></li>
+<li>Insert your flashcart's sd into your pc</li>
+<li>Copy the file <code>usrcheat.dat</code> located in <code>/_rpg/cheats</code> on your flashcart's SD to somewhere on your pc <br/> (if your flashcart is empty download <a href="https://mega.nz/#!rpkhRCLB!yQdCQGOMfm3LZaf6DYOho60w5M530CZAKWu6uvQX_Eo">this</a> and extract it to your flashcart's sd root)</li>
+<li>Open r4cce</li>
+<li>In r4cce press Ctrl + O and select the <code>usrcheat.dat</code> file that you copied to your pc</li>
+<li>Open <a href="https://gbatemp.net/threads/widescreen-cheats-for-ds-games-on-3ds.543212/">this gbatemp post</a> in your web browser to check if your game has a 16:10 code written for it<br />
+(if it doesn't you're stuck with normal streched)</li>
+<li>In r4cce, find your game in the list, if it isn't there select <code>Add Game</code> and then select <code>Dup?</code>. It should bring up a file selection, from there select your <code>nds</code> rom</li>
+<li>Right click on the game title and select <code>Add Code</code></li>
+<li>Name the code <code>16:10 Widescreen</code> or something similar</li>
+<li>Paste the code from the gbatemp thread into r4cce like this:<br />
+<img alt="r4cce HG code" src="/files/pic/r4cce_code.png" /></li>
+<li>Do this for all of the titles you want 16:10 widescreen for</li>
+<li>Once you're done save the <code>usrcheat.dat</code> by pressing Ctrl + S and  copy the file to <code>/_rpg/cheats</code> on your flashcart's SD, replace the existing one when prompted to</li>
+<li>Insert your flashcart's sd into your flashcart</li>
+<li>Power on your 3ds and launch your flashcart from the home menu</li>
+<li>Navigate to your nds game and press Y on it</li>
+<li>Press X to open the cheat menu and select the widescreen code</li>
+<li>Open the game and it should be widescreen 16:10</li>
+</ol></div>
             </div>
         </div>
 
