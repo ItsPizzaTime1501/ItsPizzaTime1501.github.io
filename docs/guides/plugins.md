@@ -6,12 +6,12 @@ Credit to `It'sPizzaTime#4530` on discord for the images and the rest of this te
 
 If you're trying to use the ACNL plugin you need to follow the steps in the [ACNL Hacking Discord](https://discord.gg/EZSxqRr)
 
-### Requirements
+## Requirements
 
 * A console with boot9strap installed
 * A plugin file you want to use (`.3gx` or `.plg`), if you don't have any you can find one them [Google](https://google.com) or [Mega NTR on github](https://github.com/ItsDeidara/MegaNTR/tree/master/Plugins/plugin)
 
-### Installing plugin type `.plg`
+## Installing plugin type `.plg`
 
 1. Download the `boot.firm` from [here](http://badda.de/lumamod/Luma3DS_v9.1-7-gbd15f_mod.7z) and place it on your sd root, make sure you overwrite the current one.
 2. Rename your `.plg` file to `plugin.plg`
@@ -27,7 +27,7 @@ If you're trying to use the ACNL plugin you need to follow the steps in the [ACN
 9. When you launch the game you setup a plugin for your screen should flash green during the Nintendo 3ds splash
 10. The standard for cheat menus is the select button, if pressing select doesn't work consider reading the readme of the plugin you're using
 
-### Installing plugin type `.3gx`
+## Installing plugin type `.3gx`
 
 1. Download the `boot.firm` from [here](https://github.com/mariohackandglitch/Luma3DS/releases/latest/) and place it on your sd root, make sure you overwrite the current one.
 2. Make a folder called `plugins` if it doesn't already exist in the `luma` folder on your sd
@@ -40,7 +40,7 @@ If you're trying to use the ACNL plugin you need to follow the steps in the [ACN
 8. Open the game you installed a plugin for, your screen should flash green or blue during the Nintendo 3ds splash
 9. The standard for cheat menus is the select button, if pressing select doesn't work consider reading the readme of the plugin you're using
 
-### (Optional) How to switch between `3gx` and `plg` loader luma easily
+## (Optional) How to switch between `3gx` and `plg` loader luma easily
 
 1. Download both `boot.firm`'s ([Luma 3gx Loader](https://github.com/mariohackandglitch/Luma3DS/releases/latest/) | [Luma plg loader](http://badda.de/lumamod/Luma3DS_v9.1-7-gbd15f_mod.7z))
 2. Rename both `boot.firm`'s to something else like `Luma3ds_3gx_loader.firm` for the `3gx` loader and `Luma3ds_plg_loader.firm` for the `plg` loader
@@ -51,12 +51,12 @@ If you're trying to use the ACNL plugin you need to follow the steps in the [ACN
 ![PayloadSpinner3ds payload location](/files/pic/payload_spinner_3ds_payload_location.png)<br/>
   Now when you want to switch between luma plg loader and luma 3gx loader you can open PayloadSpinner3DS and select whichever one you want to use
 
-### Troubleshooting
+## Troubleshooting
 
-#### **Game crashes when using a plugin**
+### **Game crashes when using a plugin**
 
 Don't use that plugin
 
-#### **Screen doesn't flash and plugin doesn't load**
+### **Screen doesn't flash and plugin doesn't load**
 
 Check if you got the right titleid, if you're sure you did try a different plugin

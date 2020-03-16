@@ -9,7 +9,7 @@ Credits to `It'sPizzaTime#4530` on discord for this guide
 * A 3ds with Luma3ds installed and GodMode9 setup
 * A DS Flashcart running WoodR4
 
-### Method 1: Patching `TwlBg.cxi` manually
+## Method 1: Patching `TwlBg.cxi` manually
 
 1. Download [this](/files/flashcart_widescreen/section0_dumper.gm9) and put it in `/gm9/scripts` on your 3ds's SD
 2. Insert your SD into your 3ds and power it on while holding start
@@ -23,7 +23,7 @@ Credits to `It'sPizzaTime#4530` on discord for this guide
 10. Make a `sysmodules` folder in the `luma` folder on your sd
 11. Copy the `TwlBg.cxi` file to the `sysmodules` folder
 
-### Method 2: Using Sono's TWPatch to patch `TwlBg.cxi`
+## Method 2: Using Sono's TWPatch to patch `TwlBg.cxi`
 
 1. Download and install [TWPatch](https://sono.9net.org/hebrew/TWPatch/data/TWPatch.cia/) on your 3ds
 2. Launch TWPatch from the home menu, it looks like this:  
@@ -33,12 +33,12 @@ Credits to `It'sPizzaTime#4530` on discord for this guide
 5. Press Select to exit
 6. Power off your console
 
-### Enabling and Disabling widescreen
+## Enabling and Disabling widescreen
 
 To enable/disable widescreen you need to enable/disable `loading external FIRMs and modules`
 To do that, boot into luma config (select on boot) and select `Enable loading external FIRMs and modules`, if it is enabled that means widescreen is enabled and if it's disabled that means widescreen is disabled.
 
-### (Optional) [Advanced] 16:10 Widescreen cheats
+## (Optional) [Advanced] 16:10 Widescreen cheats
 
 1. Download r4cce from [here](http://hp.vector.co.jp/authors/VA013928/bin/r4cce086.zip)
 2. Insert your flashcart's sd into your pc
