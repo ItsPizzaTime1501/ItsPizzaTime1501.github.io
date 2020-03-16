@@ -28,7 +28,7 @@ Credit to `It'sPizzaTime#4530` on discord for the images and the rest of this te
 ![Theme Manual Download](/files/pic/theme_manual_download.png)
 2. Save the zip somewhere on your pc
 3. Insert your 3ds's sd card into your pc
-4. Make a __Themes__ folder on your sd root if it doesn't already exist
+4. Make a `Themes` folder on your sd root if it doesn't already exist
 5. Copy the downloaded zip file to the themes folder, if you're having difficulty here's an example:
 ![Theme Location](/files/pic/theme_location.png)
 
