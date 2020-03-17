@@ -3,7 +3,6 @@ html {
        main container. */
     scroll-padding-top: calc(4.40625rem + 20px);
 }
-
 body > .container {
     margin-top: 20px;
 }
