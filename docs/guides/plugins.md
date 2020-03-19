@@ -1,6 +1,6 @@
-# 3ds plugins guide
+# Luma3ds Plugin Loader Guide
 
-This guide will show you how to install plugins without Boot NTR Selector
+This guide will teach you how to install and use 2 custom luma forks with different plugin types
 
 Credit to `It'sPizzaTime#4530` on discord for the images and the rest of this terrible guide
 
@@ -9,7 +9,17 @@ If you're trying to use the ACNL plugin you need to follow the steps in the [ACN
 ## Requirements
 
 * A console with boot9strap installed
-* A plugin file you want to use (`.3gx` or `.plg`), if you don't have any you can find one them [Google](https://google.com) or [Mega NTR on github](https://github.com/ItsDeidara/MegaNTR/tree/master/Plugins/plugin)
+* A plugin file you want to use (`.3gx` or `.plg`), if you don't have any you can find them by doing a quick google search, here's a list of some good ones:
+
+Pokemon Ultra Sun and Ultra Moon: [ultraSuMoFramework](https://gbatemp.net/threads/release-ultrasumoframework-ntr-plugin-for-ultra-sumo.489098/)
+
+Pokemon Sun and Moon: [sumoCheatMenu](https://github.com/AnalogMan151/sumoCheatMenu/releases)
+
+Mario Kart 7: [Mario Kart 7 Online NTR Plugin](https://github.com/DarkFlare69/MK7-Online-NTR-Plugin-v3/raw/master/MarioKart7.3gx)
+
+The Legend of Zelda: Ocarina of Time 3D: [Zelda-Ocarina-Of-Time-3D-Plugin](https://github.com/Nanquitas/Zelda-Ocarina-Of-Time-3D-Plugin)
+
+Assorted Games: [CTRPF Plugins 3.0](https://www.maxconsole.com/attachments/ctrpf-plugins-master-zip.9248/)
 
 ## Installing plugin type `.plg`
 
@@ -55,8 +65,8 @@ If you're trying to use the ACNL plugin you need to follow the steps in the [ACN
 
 ### **Game crashes when using a plugin**
 
-Don't use that plugin
+Fix: Don't use that plugin
 
 ### **Screen doesn't flash and plugin doesn't load**
 
-Check if you got the right titleid, if you're sure you did try a different plugin
+Fix: Check if you got the right titleid, if you're sure you did try a different plugin
