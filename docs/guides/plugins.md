@@ -4,7 +4,7 @@ This guide will teach you how to install and use 2 custom luma forks with differ
 
 Credit to `It'sPizzaTime#4530` on discord for the images and the rest of this terrible guide
 
-If you're trying to use the ACNL plugin you need to follow the steps in the [ACNL Modding Hub](https://discord.gg/EZSxqRr)
+If you're trying to use the ACNL plugin you need to follow the steps in the [AC Modding Hub](https://discord.gg/EZSxqRr)
 
 ## Requirements
 
