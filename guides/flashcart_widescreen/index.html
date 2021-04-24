@@ -144,7 +144,7 @@
                 
             <li class="second-level"><a href="#enabling-and-disabling-widescreen">Enabling and Disabling widescreen</a></li>
                 
-            <li class="second-level"><a href="#optional-advanced-1610-widescreen-cheats">(Optional) [Advanced] 16:10 Widescreen cheats</a></li>
+            <li class="second-level"><a href="#optional-advanced-1610-widescreen-patches">(Optional) [Advanced] 16:10 Widescreen Patches</a></li>
                 
     </ul>
 </div></div>
@@ -155,7 +155,7 @@
 <h3 id="what-you-need">What you need</h3>
 <ul>
 <li>A 3ds with Luma3ds installed and GodMode9 setup</li>
-<li>A DS Flashcart running WoodR4</li>
+<li>An NDS Flashcart running the WoodR4 kernel</li>
 </ul>
 <h3 id="method-1-patching-twlbgcxi-manually">Method 1: Patching <code>TwlBg.cxi</code> manually</h3>
 <ol>
@@ -172,17 +172,17 @@
 </ol>
 <h3 id="method-2-using-sonos-twpatch-to-patch-twlbgcxi">Method 2: Using Sono's TWPatch to patch <code>TwlBg.cxi</code></h3>
 <ol>
-<li>Download and install <a href="https://sono.9net.org/hebrew/TWPatch/data/TWPatch.cia/">TWPatch</a> on your 3ds</li>
+<li>Download and install <a href="https://sono.9net.org/hebrew/TWPatch/data/TWPatch.cia">TWPatch</a> on your 3ds</li>
 <li>Launch TWPatch from the home menu, it looks like this:<br />
 <img alt="TWPatch Home Menu" src="/files/pic/TWPatch_Home.png" /></li>
-<li>Leave your cursor on <code>Nintendo Default</code> and press Start + <img src="/files/button/3ds_button_x.png" alt="xbutton" width="20"></li>
+<li>Select <code>Nintendo Default</code> (or whichever one you'd like) and press Start</li>
 <li>Wait for it to finish compressing</li>
 <li>Press Select to exit</li>
 <li>Power off your console</li>
 </ol>
 <h3 id="enabling-and-disabling-widescreen">Enabling and Disabling widescreen</h3>
-<p>To enable/disable widescreen you need to enable/disable <code>loading external FIRMs and modules</code> in luma config. If you would like to get rid of widescreen completely, delete <code>TwlBg.cxi</code> located in <code>/luma/sysmodules</code> on your SD</p>
-<h3 id="optional-advanced-1610-widescreen-cheats">(Optional) [Advanced] 16:10 Widescreen cheats</h3>
+<p>To enable NDS mode widescreen simply enable the <code>Enable loading external FIRMs and modules</code> option in luma config, and disable that option if you don't want it. If you would like to get rid of NDS mode widescreen completely, delete <code>TwlBg.cxi</code> located in <code>/luma/sysmodules</code> on your SD Card.</p>
+<h3 id="optional-advanced-1610-widescreen-patches">(Optional) [Advanced] 16:10 Widescreen Patches</h3>
 <ol>
 <li>Download r4cce from <a href="http://hp.vector.co.jp/authors/VA013928/bin/r4cce086.zip">here</a></li>
 <li>Insert your flashcart's SD into your pc</li>
